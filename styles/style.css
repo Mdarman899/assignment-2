@@ -7,6 +7,23 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
 }
 /* start header section styles */
+.nav-bar{
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: 800;
+  margin:30px auto ;
+  gap: 10px;
+}
+.z{
+  color: red;
+}
+.v{
+  color: #f30707;
+}
+
 .header-nav {
   background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(../images/Group\ 13\ \(1\)\ \(1\).png) ;
   height: 500px;
@@ -18,10 +35,64 @@ body {
   padding-top: 100px;
   border-radius: 15px;
 }
+.search{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 29px;
+  padding-left: 10px;
+  border: none;
+  margin: 5px;
+}
+.when{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 29px;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  color:rgb(147, 148, 150);
+}
+.select{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 29px;
+  padding-left: 10px;
+  border: none;
+  margin: 5px;
+  color: rgb(147, 148, 150);
+}
+.find{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 29px;
+  padding-left: 10px;
+  border: none;
+  margin: 5px;
+  background-color: rgb(231, 73, 10);
+}
+.find::placeholder{
+  color: white;
+}
+.header-input-section{
+  background-color: rgba(172, 180, 187,0.65);
+  height: 75px;
+  width: 900px;
+  margin:0px auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-radius: 15px;
+  display:flex;
+}
+
 .explore-title{
   font-size: 50px;
   font-weight: 900;
   text-transform: capitalize;
+  padding-top: 80px;
 }
 .explore-description{
   margin: 20px auto;
@@ -30,24 +101,9 @@ body {
   color:rgb(215, 221, 226);
   width:700px;
   line-height: 25px;
+  margin-bottom: 50px;
 }
-.header-input-section{
-  background-color: rgba(172, 180, 187,0.65);
-  height: 75px;
-  width: 900px;
-  margin:30px auto;
-  padding-top: 15px;
-  border-radius: 15px;
-}
-.header-input-section > input{
-  width: 200px;
-  height: 50px;
-  border-radius: 10px;
-  font-size: 20px;
-  padding-left: 10px;
-  border: none;
-  margin: 5px;
-}
+
 
 /* start main section styles  */
 .main {
@@ -293,16 +349,32 @@ body {
   width: 90%;
   margin:5px;
 }
+.explore-title{
+  padding: 10px;
+}
 
 .header-input-section{
-  width: 80%;
-  height: auto;
-  padding:10px
-}
-.header-input-section input{
   width: 85%;
+  padding:10px;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 
+.select{
+  width: 85%;
+  padding: 10px;
+}
+.search{
+ padding: 10px;
+ width:85%;
+}
+.when{
+  width: 85%;
+}
+.find{
+  width: 85%;
+}
 }
 
 /* responsive main section of tour section  */
